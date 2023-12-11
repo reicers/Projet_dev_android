@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/r_office_btn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:clickable="true"
+        android:contentDescription="go to map activity"
+        android:tint="@color/design_default_color_on_primary"
+        android:visibility="visible"
+        app:backgroundTint="#959595"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/star_off" />
+
+    <TextView
+        android:id="@+id/r_office_txv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Candide" />
+
+    <TextView
+        android:id="@+id/r_office_txv_long"
+        android:layout_width="48dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_office_txv_name"
+        tools:text="long" />
+
+    <TextView
+        android:id="@+id/r_office_txv_lat"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/r_office_txv_long"
+        app:layout_constraintTop_toBottomOf="@+id/r_office_txv_name"
+        tools:text="lat" />
+
+    <TextView
+        android:id="@+id/r_office_txv_type"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_office_txv_name"
+        tools:text="123-54394530" />
+</androidx.constraintlayout.widget.ConstraintLayout>

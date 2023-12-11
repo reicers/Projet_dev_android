@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreateOfficeFragment">
+
+    <TextView
+        android:id="@+id/f_text_about_us"
+        android:layout_width="312dp"
+        android:layout_height="631dp"
+        android:text="Welcome to our app \n We are 2 passionate developper from the south of France : \nAlexis de Lapeyrière \nCyprient Jorant \n\nIn 2023, we were asked to developp an application as a school project. \nThat's why we decided to create an app that would help you locate the nearest post office. \n And why would you use our app and not google map ? \n\nBecause google map has difficulties identifying things other than post offices.\nBut our app is able to locate all kinds of post offices, relai, etc... \n\nSo we hope you'll find this application usefull in your day to day life."
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="114dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
